@@ -33,3 +33,6 @@ git reset --hard head~1 (volta 1 versão ~2 retorna 2 versoes)
 testeee
 
 -- git clone "endereço"
+-- git remote (o proprio github gera esse comando quando criamos o repositorio)
+-- git push -u origin main (subir para o remoto)
+-- git pull (verifica se a versao local esta igual a versao do remoto)
