@@ -30,4 +30,4 @@ git reset --hard idcommit
 
 git reset --hard head~1 (volta 1 versão ~2 retorna 2 versoes)
 
-teste
+testeee
