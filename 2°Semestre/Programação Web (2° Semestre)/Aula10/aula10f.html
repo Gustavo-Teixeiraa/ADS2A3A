@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            let btn = document.getElementById("botao");
+            btn.onclick = function () {
+                let tabuada = parseFloat(document.getElementById("tabuada").value);
+                let resultado = "";
+                for(let x = 1; x<=10; x++){
+                    resultado = resultado + `${tabuada} x ${x} = ${(tabuada * x)} <br>`
+                }
+                document.getElementById("resultado").innerHTML = resultado;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Cálculo da tabuada</h2>
+    <p>Tabuada: <input type="number" id="tabuada" value=""></p>
+    <p><input type="button" id="botao" value="Calcular"></p>
+    <br>
+    <div id="resultado">
+    
+    </div>
+</body>
+</html>

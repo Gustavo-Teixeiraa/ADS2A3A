@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 3 - Formulário 1 - HTML 5</title>
+</head>
+<body>
+    <form name="cadastro" method="post" action="processa_cadastro.php">
+        <fieldset>
+            <legend>
+                Formulário de Cadastro
+            </legend>
+
+        </fieldset>
+
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" size="50" autofocus required minlength="10" placeholder="Digite seu nome">
+        </p>
+
+        <p>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" size="80" value="Av.Paulista.1999" readonly>
+        </p>
+
+        <p>
+            <label for="dtNascimento">Data de Nascimento:</label>
+            <input type="date" name="dtNascimento" id="dtNascimento" required>
+        </p>
+
+        <p>
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo" required>
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" size="40"  placeholder="Digite seu Email" required>
+        </p>
+        <hr>
+        <p>
+            <input type="submit" value="Enviar">
+            &nbsp; &nbsp; &nbsp;
+            <input type="reset" value="Limpar Campos">
+        </p>
+    </form>
+</body>
+</html>

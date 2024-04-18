@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula5e - Exemplo JavaScript</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        function calculo() {
+        let numdigitado = parseFloat(document.getElementById('numero').value);
+        document.getElementById('dobro').setAttribute("value", numdigitado*2);   
+        }
+    </script>
+
+    <h1>Exercicio 3 Calcule o dobro do número</h1>
+    <form>
+        <p>
+            <label for="numero">Número: </label>
+            <input type="number" id="numero" size="5" autofocus>
+
+        </p>
+        <br>
+        <p>
+           <input type="button" onclick="javascript:calculo()" value="Calcular Dobro">
+           <input type="number" id="dobro" value="" readonly>
+        </p>
+    </form>
+</body>
+</html>

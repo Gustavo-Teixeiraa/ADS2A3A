@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2 - JS</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        function calculo() {
+        let numdigitado = parseFloat(document.getElementById('numero').value);
+        document.getElementById('dobro').setAttribute("value", numdigitado*2);   
+        }
+    </script>
+
+    <h2>Exercicio 2</h2>
+    <form>
+        <p>
+            <label for="numero">Número: </label>
+            <input type="number" id="numero" size="5" autofocus>
+
+        </p>
+        <br>
+        <p>
+           <input type="button" onclick="calculo()" value="Calcular Dobro">
+           <input type="number" id="dobro" value="" readonly>
+        </p>
+    </form>
+</body>
+</html>

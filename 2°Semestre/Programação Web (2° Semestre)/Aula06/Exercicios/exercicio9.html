@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+    <script>
+        function calculos(){
+            let nome = document.getElementById("nome").value
+            let anonascimento = parseInt(document.getElementById("anonascimento").value)
+            let anoatual = parseInt(document.getElementById("anoatual").value)
+
+            let anos = anoatual - anonascimento
+            
+            document.getElementById("seunome").setAttribute("value",nome)
+            document.getElementById("suaidade").setAttribute("value",anos)
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" value="" autofocus>
+        </p>
+        <p>
+            <label for="anonascimento">Ano de Nascimento:</label>
+            <input type="number" id="anonascimento" value="" autofocus>
+        </p>
+        <p>
+            <label for="anoatual">Ano Atual:</label>
+            <input type="number" id="anoatual" value="" autofocus>
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="calculos()">
+        </p>
+        <p>
+            <label for="seunome">Seu Nome:</label>
+            <input type="text" id="seunome" value="" readonly>
+        </p>
+        <p>
+            <label for="suaidade">Sua Idade:</label>
+            <input type="text" id="suaidade" value="" readonly>
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Exemplo Javascript</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18pt;
+        }
+
+        form {
+            border: double 22px red;
+            width: 400px;
+            padding: 30px;
+        }
+
+        #valor1 {
+            background-color: yellow;
+        }
+
+        #valor2 {
+            background-color: yellow;
+        }
+
+        #resultado {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        "use strict"
+
+        function calculoo() {
+            let num1 = parseFloat(document.getElementById('valor1').value);
+            let num2 = parseFloat(document.getElementById('valor2').value);
+            let op = document.querySelector('input[name="operacao"]:checked').value;
+
+            let resultado;
+
+            if (op == 'soma') {
+                resultado = num1 + num2;
+            } else if (op == 'subtracao') {
+                resultado = num1 - num2;
+            } else if (op == 'multiplicacao') {
+                resultado = num1 * num2;
+            } else if (op == 'divisao') {
+                resultado = num1 / num2;
+            }
+
+            document.getElementById('resultado').value = resultado;
+        }
+    </script>
+
+    <form>
+        <p>
+            <label for="valor1">Valor 1:</label>
+            <input type="number" id="valor1" value="" max="10" autofocus>
+        </p>
+
+        <p>
+            <label for="valor2">Valor 2:</label>
+            <input type="number" id="valor2" value="" max="10">
+        </p>
+
+        <p>
+            <label for="op">Opções:</label> <br>
+            <input type="radio" name="operacao" value="soma">SOMA <br>
+            <input type="radio" name="operacao" value="subtracao">SUBTRAÇÃO <br>
+            <input type="radio" name="operacao" value="multiplicacao">MULTIPLICAÇÃO <br>
+            <input type="radio" name="operacao" value="divisao">DIVISÃO <br>
+        </p>
+
+        <p>
+            <label for="resultado">Resultado:</label>
+            <input type="button" onclick="calculoo()" value="Calcular">
+            <input type="text" id="resultado" readonly>
+        </p>
+    </form>
+</body>
+</html>

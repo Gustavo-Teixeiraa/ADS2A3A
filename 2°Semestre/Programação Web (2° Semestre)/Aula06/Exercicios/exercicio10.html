@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+    <script>
+        function calculos(){
+           let alturadegrau = parseFloat(document.getElementById("alturadegrau").value)
+           let alturadesejada = parseFloat(document.getElementById("alturadesejada").value)
+           let qntDegraus = alturadesejada/alturadegrau
+           document.getElementById("qntDegraus").setAttribute("value",qntDegraus)
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="alturadegrau">Altura do Degrau:</label>
+            <input type="number" id="alturadegrau" value="" autofocus>
+        </p>
+        <p>
+            <label for="alturadesejada">Altura Desejada:</label>
+            <input type="number" id="alturadesejada" value="" autofocus>
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="calculos()">
+        </p>
+        <p>
+            <label for="qntDegraus">Quantidade de Degraus:</label>
+            <input type="number" id="qntDegraus" value="" readonly>
+        </p>
+    </form>
+</body>
+</html>

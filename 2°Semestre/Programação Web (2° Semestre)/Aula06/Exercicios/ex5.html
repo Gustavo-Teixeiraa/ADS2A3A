@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5 - JS</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        function quadrado() {
+            let num1 = parseInt(document.getElementById('numero').value)
+            document.getElementById('resultado').setAttribute("value", num1**2)
+        }
+    </script>
+    <form>
+        <p>
+            <label for="numero">Digite um número</label>
+            <input type="number" id="numero" size="5" autofocus>
+        </p>
+
+        <p>
+            <input type="button" onclick="quadrado()" value="Calcular o quadrado do número">
+            <input type="number" id="resultado" value="" readonly>
+        </p>
+    </form>
+</body>
+</html>

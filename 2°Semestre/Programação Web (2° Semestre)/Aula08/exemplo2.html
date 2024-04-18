@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo switch</title>
+</head>
+<body>
+    <script>
+        let data_hora = new Date();
+        dia_semana = data_hora.getDay();
+        switch (dia_semana) {
+            case 0:
+                alert("Domingo dia de descanso")
+                break;
+            case 1:
+            case 2:
+            case 3:
+                alert("Semana brava");
+                break;
+            case 5:
+                alert("Sextou")
+                break;
+            case 6:
+                alert("Maravilha, sabadou")
+                break;
+        
+            default:
+                alert("Semana longaa....")
+                break;
+        }
+    </script>
+</body>
+</html>

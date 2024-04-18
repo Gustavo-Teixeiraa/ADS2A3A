@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+    <script>
+        function calculos(){
+            let base = parseFloat(document.getElementById("base").value)
+            let altura = parseFloat(document.getElementById("altura").value)
+            let area = (base*altura)/2
+            document.getElementById("area").setAttribute("value",area)
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="base">Base:</label>
+            <input type="number" id="base" value="" autofocus>
+        </p>
+        <p>
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" value="">
+        </p>
+        <p>
+            <label for="area">Área:</label>
+            <input type="number" id="area" value="0" readonly>
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="calculos()">
+        </p>
+    </form>
+</body>
+</html>

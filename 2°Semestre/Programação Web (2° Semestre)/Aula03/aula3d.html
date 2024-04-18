@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Formulário 2</title>
+</head>
+<body>
+    <form name="cadastro" method="post" action="processa_cadastro.php">
+      <fieldset>
+        <legend>Preferências</legend>
+
+        <p>
+            <label for="nome">Religiões</label>
+        </p>
+
+        <p>
+            <input type="radio" name="religiao" id="religiao"> Católico
+        </p>
+
+        <p>
+            <input type="radio" name="religiao" id="religiao"> Protestante
+        </p>
+
+        <p>
+            <input type="radio" name="religiao" id="religiao"> Espírita
+        </p>
+
+        <p>
+            <input type="radio" name="religiao" id="religiao"> Budista
+        </p>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Animais de estimação</legend>
+        <select name="animais" id="animais" size="4" multiple>
+            <option selected value="0">Nenhum</option>
+            <optgroup label="Pets">
+                <option value="1">Cachorro</option>
+                <option value="2">Gato</option>
+            </optgroup>
+            <optgroup label="Pássaros">
+                <option value="3">Papagaio</option>
+                <option value="4">Canário</option>
+            </optgroup>
+            <optgroup label="Outros Tipos">
+                <option value="5">Peixe</option>
+                <option value="6">Iguana</option>
+                <option value="7">Outro</option>
+            </optgroup>
+        </select>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Pratico as seguintes atividades físicas</legend>
+        <input type="checkbox" name="atividades" value="1" checked> Musculação
+        <input type="checkbox" name="atividades" value="2"> Natação
+        <input type="checkbox" name="atividades" value="3"> Hidroginástica
+        <input type="checkbox" name="atividades" value="4"> Caminhada
+        <input type="checkbox" name="atividades" value="5"> Futebol
+        <input type="checkbox" name="atividades" value="6"> Basquete
+        <input type="checkbox" name="atividades" value="7"> Vôlei
+        <input type="checkbox" name="atividades" value="8"> Outro
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Meus filmes preferidos</legend>
+        <textarea name="filmes" id="filmes" cols="100" rows="10" placeholder="Digite seus filmes preferidos" required></textarea>
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Enviar">
+      </p>
+
+    </form>
+</body>
+</html>
