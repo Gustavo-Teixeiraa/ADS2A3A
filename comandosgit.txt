@@ -9,7 +9,7 @@ git config --global user.email "gusta@gmail.com"
 
 ---alterar branch para main
 git branch -m master main
-
+l
 ---verificar status do repositorio
 git status
 
